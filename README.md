@@ -13,8 +13,16 @@ I am using the apriltag library to detect the apriltag in the camera image.
 Follow the instructions here ``` https://github.com/franzesegiovanni/franka_human_friendly_controllers ``` to install the controller on the computer connected to the robot.
 
 Run the controller before starting the calibration 
+
+~/catkin_testws 
+
+source devel/setup.bash
+
 ```bash
   roslaunch franka_human_friendly_controllers cartesian_variable_impedance_controller.launch robot_ip:=ROBOT_IP
+  roslaunch franka_human_friendly_controllers cartesian_variable_impedance_controller.launch robot_ip:=franka2 load_gripper:=True arm_id:=fr3
+
+
 ```
 If you need extra precision in the forward kinematics (that will also result in better results in the calibration of the camera) please give a look in the human friendly controllers on how to run the calibrated kinematic model. 
 
