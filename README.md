@@ -57,3 +57,7 @@ Example:
 <node pkg="tf" type="static_transform_publisher" name="camera_tf_publisher" args="translation/x translation/y translation/z rotation/x rotation/y rotation/z rotation/w starting_frame camera_color_optical_frame 100" />
 
 ```
+
+roslaunch franka_easy_handeye camera_april_tag.launch 
+
+
